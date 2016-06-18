@@ -1,0 +1,84 @@
+<ion-view  class="backgroundNeutre">
+
+    <ion-nav-buttons side="right">
+
+        <button class="button" style="border: 0; background: transparent"><i class="icon button-icon ion-camera"></i>
+        </button>
+
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="left">
+
+            <button class="button" style="border: 0; background: transparent" ui-sref="tab.quete"><i class="icon button-icon icon-clear ion-arrow-left-a"></i>
+            </button>
+
+    </ion-nav-buttons>
+    <ion-content>
+
+        <div ng-if="team === equipeLogique">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)">
+                <ion-slide>
+                    <img src="../img/Enigme/1Nord.png" style="height: 75%;width: 80%;">
+                </ion-slide>
+
+                <ion-slide>
+                    <img src="../img/Enigme/2Ouest.png" style="height: 75%;width: 80%;" >
+                </ion-slide>
+
+                <ion-slide>
+                    <img src="../img/Enigme/3Sud.png" style="height: 75%;width: 80%;" >
+                </ion-slide>
+
+                <ion-slide>
+                    <img src="../img/Enigme/4Est.png" style="height: 75%;width: 80%;" >
+                </ion-slide>
+
+                <ion-slide>
+                    <img src="../img/Enigme/CroixEnigme.png" style="height: 75%;width: 80%;" >
+                </ion-slide>
+
+                <ion-slide>
+                    <img src="../img/Enigme/croquis.png" style="height: 75%;width: 80%;" >
+                </ion-slide>
+
+            </ion-slide-box>
+
+
+            <div class="list inputStyleQueteCheck">
+
+                <form>
+
+                    <label class="item item-input">
+                        <input ng-model="user.answerLogique" type="text" placeholder="Votre réponse ici !">
+                    </label>
+
+
+                </form>
+            </div>
+
+            <button class="button button-balanced QueteButtonPageCheck" ng-click="answerLogique(user.answerLogique)">Valider
+            </button>
+        </div>
+
+        <div ng-if="team === equipeSens">
+
+
+            <div class="list inputStyleQueteCheckSens">
+
+                <form>
+
+                    <label class="item item-input">
+                        <input ng-model="user.answerSens" type="text" placeholder="Votre réponse ici !">
+                    </label>
+
+
+                </form>
+            </div>
+
+            <button class="button button-balanced QueteButtonPageCheckSens" ng-click="answer(user.answerSense)">Valider
+            </button>
+
+        </div>
+
+    </ion-content>
+</ion-view>
