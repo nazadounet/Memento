@@ -17,10 +17,11 @@ app.controller('MapCtrl', function($window, $scope, $state, $cordovaGeolocation,
 
             };
 
-
+/*
             $ionicLoading.show({
                 template: 'Loading...'
             });
+            */
             var options = {timeout: Infinity, enableHighAccuracy: false};
 
             $scope.initMap = function(){
@@ -97,7 +98,7 @@ app.controller('MapCtrl', function($window, $scope, $state, $cordovaGeolocation,
                     watch.clearWatch();
 
 
-                    $ionicLoading.hide()
+                    //$ionicLoading.hide()
                 }, function (error) {
                     console.log("Could not get location");
                 });

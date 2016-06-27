@@ -26,11 +26,11 @@ app.controller('QueteCtrl', function($scope, $ionicPopup, $state, Auth, $rootSco
 
             $scope.user={};
 
-            $scope.answerSens = function () {
+            $scope.answerLogique = function () {
 
-                var goodAnswer = 'fontaine des éléphant';
+                var goodAnswer = 'fontaine des éléphants';
 
-                if($scope.user.answerSens == goodAnswer){
+                if($scope.user.answerLogique == goodAnswer){
                     $ionicPopup.alert({
                         title: 'Réponse validé',
                         template: 'Vous avez trouvé la bonne réponse !'

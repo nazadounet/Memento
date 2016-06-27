@@ -1,4 +1,4 @@
-@font-face {
+    @font-face {
     font-family: 'Calson';
     src: url('../font/ufonts.com_caslon_3_lt_roman.eot');
     src: url('../font/ufonts.com_caslon_3_lt_roman.eot') format('truetype'),
@@ -135,7 +135,7 @@ font-style: italic;
 .DashUsername{
     text-align: center;
     color:white;
-    margin-top: 55.8%;
+    margin-top: 237px;
     font-family: 'Calson';
     font-size: 18px;
 }
@@ -169,14 +169,14 @@ font-style: italic;
 .buttonQuete{
     width: 100%;
     margin: auto;
-    margin-top:32%;
+    margin-top:43%;
 
 }
 .inputStyleQueteCheck{
     width: 80%;
     display: block;
     margin:0 auto;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .QueteButtonPageCheck{
     width:50%;
@@ -248,28 +248,28 @@ font-style: italic;
 }
 
 .logButtonPage{
-    width:20%;
+    width:30%;
     display: block;
     margin:0 auto;
-    margin-top:15%;
+    margin-top:5%;
 }
 .SignUpButtonPage{
     width:50%;
     display: block;
     margin:0 auto;
-    margin-top:15%;
+    margin-top:5%;
 }
 .inputStyle{
     width: 80%;
     display: block;
     margin:0 auto;
-    margin-top:20%;
+    margin-top:40%;
 }
 
 .logButton{
     display: block;
     margin:0 auto;
-    margin-top:90%;
+    margin-top:100%;
 }
 .buttonLogin{
     width:23.5%;
@@ -285,10 +285,10 @@ font-style: italic;
 
 }
 .buttonFB{
-    width:44%;
+    width:40%;
     display: block;
     margin:0 auto;
-    margin-top:20px;
+    margin-top:30px;
 
 }
 
